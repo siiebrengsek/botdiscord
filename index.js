@@ -72,14 +72,15 @@ client.on('messageCreate', async (message) => {
 
                     if (verifiedRole && !member.roles.cache.has(verifiedRole.id)) {
                         await member.roles.add(verifiedRole);
-                        message.reply('✅ **Verifikasi berhasil!** Terima kasih telah subscribe ke channel YouTube kami!');
+                        message.reply('✅ **Verifikasi berhasil!** Terima kasih telah subscribe ke channel YouTube kami!\n✅ **Verification successful!** Thank you for subscribing to our YouTube channel!');
                     } else {
-                        message.reply('✅ Anda sudah terverifikasi sebelumnya!');
+                        message.reply('✅ Anda sudah terverifikasi sebelumnya!\n✅ You have been previously verified!');
                     }
                 }
                 message.delete();
             } else {
-                message.reply('⚠️ **Gambar tidak valid!**\nPastikan screenshot menunjukkan bahwa kamu sudah subscribe ke channel YouTube kami.');
+                message.reply('⚠️ **Gambar tidak valid!**\nPastikan screenshot menunjukkan bahwa kamu sudah subscribe ke channel YouTube kami.\n\n⚠️ **Invalid image!**\nMake sure the screenshot shows that you have subscribed to our YouTube channel.
+Use the English language setting in your YouTube app if it continues to fail');
             }
         } catch (err) {
             console.error('❌ Gagal mengunduh gambar:', err);
