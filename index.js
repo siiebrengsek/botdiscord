@@ -79,8 +79,7 @@ client.on('messageCreate', async (message) => {
                 }
                 message.delete();
             } else {
-                message.reply('⚠️ **Gambar tidak valid!**\nPastikan screenshot menunjukkan bahwa kamu sudah subscribe ke channel YouTube kami.\n\n⚠️ **Invalid image!**\nMake sure the screenshot shows that you have subscribed to our YouTube channel.
-Use the English language setting in your YouTube app if it continues to fail');
+                message.reply('⚠️ **Gambar tidak valid!**\nPastikan screenshot menunjukkan bahwa kamu sudah subscribe ke channel YouTube kami.\n\n⚠️ **Invalid image!**\nMake sure the screenshot shows that you have subscribed to our YouTube channel.\nUse the English language setting in your YouTube app if it continues to fail');
             }
         } catch (err) {
             console.error('❌ Gagal mengunduh gambar:', err);
