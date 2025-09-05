@@ -50,7 +50,7 @@ client.on('messageCreate', async (message) => {
 
     // Jika pengguna mengirim teks biasa di channel verifikasi
     if (message.attachments.size === 0) {
-        message.reply(`**📌 Verify Dulu!**\n\nUntuk mendapatkan akses ke server, kamu harus subscribe ke channel YouTube kami!\n\n✅ **Cara Verifikasi:**\n1️⃣ Subscribe ke channel YouTube ini: 🔗 [${YOUR_YOUTUBE_CHANNEL_URL}]\n2️⃣ Ambil screenshot bukti sudah subscribe\n3️⃣ Kirim screenshot di sini\n4️⃣ Tunggu sebentar, bot akan memverifikasi secara otomatis. 🚀`);
+        message.reply(`**📌 Verify Dulu!**\n\nUntuk mendapatkan akses ke server, kamu harus subscribe ke channel YouTube kami!\n\n✅ **Cara Verifikasi:**\n1️⃣ Subscribe ke channel YouTube ini: 🔗 [${YOUR_YOUTUBE_CHANNEL_URL}]\n2️⃣ Ambil screenshot bukti sudah subscribe\n3️⃣ Kirim screenshot di sini\n4️⃣ Tunggu sebentar, bot akan memverifikasi secara otomatis. 🚀\n\n**english**\n\n**📌 Verify First!**\n\nTo get access to the server, you must subscribe to our YouTube channel!\n\n✅ **How ​​to Verify:**\n1️⃣ Subscribe to this YouTube channel: 🔗 [${YOUR_YOUTUBE_CHANNEL_URL}]\n2️⃣ Take a screenshot of your subscription\n3️⃣ Send the screenshot here\n4️⃣ Wait a moment, the bot will verify automatically. 🚀`);
         return;
     }
 
